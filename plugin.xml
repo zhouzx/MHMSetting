@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-UtilsPlugin" version="0.0.1">
+    <name>UtilsPlugin</name>
+    <description>Bluepage Cordova Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,harri</keywords>
+
+    <engines>
+	   <engine name="cordova" version=">=3.2.0" />
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="UtilsPlugin">
+                <param name="android-package" value="com.Utils.UtilsPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/UtilsPlugin.java" target-dir="src/com/Utils" />
+    </platform>
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="UtilsPlugin">
+                <param name="ios-package" value="UtilsPlugin" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/UtilsPlugin.h" />
+        <source-file src="src/ios/UtilsPlugin.m" />
+    </platform>
+
+</plugin>
