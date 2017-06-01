@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-UtilsPlugin" version="0.0.1">
-    <name>UtilsPlugin</name>
-    <description>Bluepage Cordova Plugin</description>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-mhmsetting" version="0.0.1">
+    <name>MHMSetting</name>
+    <description>MHM Setting Cordova Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,harri</keywords>
+    <keywords>mhm,zhouzx,setting</keywords>
 
     <engines>
 	   <engine name="cordova" version=">=3.2.0" />
@@ -13,24 +13,24 @@
     <!-- android -->
     <platform name="android">
         <config-file target="config.xml" parent="/*">
-            <feature name="UtilsPlugin">
-                <param name="android-package" value="com.Utils.UtilsPlugin" />
+            <feature name="MHMSetting">
+                <param name="android-package" value="com.zhouzx.MHMSetting" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
         
-        <source-file src="src/android/UtilsPlugin.java" target-dir="src/com/Utils" />
+        <source-file src="src/android/MHMSetting.java" target-dir="src/com/zhouzx" />
     </platform>
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="UtilsPlugin">
-                <param name="ios-package" value="UtilsPlugin" onload="true" />
+            <feature name="MHMSetting">
+                <param name="ios-package" value="MHMSetting" onload="true" />
             </feature>
         </config-file>
 
-        <header-file src="src/ios/UtilsPlugin.h" />
-        <source-file src="src/ios/UtilsPlugin.m" />
+        <header-file src="src/ios/MHMSetting.h" />
+        <source-file src="src/ios/MHMSetting.m" />
     </platform>
 
 </plugin>
