@@ -10,6 +10,10 @@
 	   <engine name="cordova" version=">=3.2.0" />
     </engines>
 
+    <js-module src="www/mhmsetting.js" name="MHMSetting">
+        <clobbers target="MHMSetting" />
+    </js-module>
+
     <!-- android -->
     <platform name="android">
         <config-file target="config.xml" parent="/*">
