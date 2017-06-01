@@ -6,9 +6,9 @@
 //
 //
 
-#import "UtilsPlugin.h"
+#import "MHMSetting.h"
 
-@implementation UtilsPlugin
+@implementation MHMSetting
 /**
  * Launch App by URL
  *

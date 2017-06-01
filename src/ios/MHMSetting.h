@@ -11,7 +11,7 @@
 #import <Cordova/CDVPlugin.h>
 #import <NewRelicAgent/NewRelic.h>
 
-@interface UtilsPlugin : CDVPlugin
+@interface MHMSetting : CDVPlugin
 
 - (void) launchMapApp:(CDVInvokedUrlCommand*)command;
 - (void) callHandler:(CDVInvokedUrlCommand*)command;
