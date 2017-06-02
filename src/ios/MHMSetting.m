@@ -11,7 +11,7 @@
 @implementation MHMSetting
 
 
--(void)openPreferencesSettings:(CDVInvokedUrlCommand*)command {
+-(void)openPreferencesScreen:(CDVInvokedUrlCommand*)command {
     CDVPluginResult* pluginResult = nil;
     
     if (&UIApplicationOpenSettingsURLString != NULL) {
