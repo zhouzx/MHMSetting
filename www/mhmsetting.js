@@ -30,13 +30,7 @@ var MHMSetting = {
 
     openPreferencesScreen: function () {
         exec(null, null, "MHMSetting", "openPreferencesScreen", []);
-    },
-
-    callHandler: function () {
-        // dark text ( to be used on a light background )
-        exec(null, null, "MHMSetting", "callHandler", []);
     }
-
 };
 
 module.exports = MHMSetting;

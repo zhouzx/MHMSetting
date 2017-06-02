@@ -12,7 +12,6 @@
 
 @interface MHMSetting : CDVPlugin
 
-- (void) launchMapApp:(CDVInvokedUrlCommand*)command;
-- (void) callHandler:(CDVInvokedUrlCommand*)command;
+- (void) openPreferencesSettings:(CDVInvokedUrlCommand*)command;
 
 @end
