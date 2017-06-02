@@ -12,6 +12,6 @@
 
 @interface MHMSetting : CDVPlugin
 
-- (void) openPreferencesSettings:(CDVInvokedUrlCommand*)command;
+- (void) openPreferencesScreen:(CDVInvokedUrlCommand*)command;
 
 @end
